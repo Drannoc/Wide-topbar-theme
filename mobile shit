@@ -13,27 +13,26 @@
 <style type="text/css">{CustomCSS}</style>
 </head>
 <body>
-
-<header></header><main>  <div class="sidey">
-<aside> <div class="headerimage">
-<a href="/"><img src="{HeaderImage}"></a>
-</div>
- {block:ShowAvatar} 
-
-     <a href="/" title="{title}">
-      
-     
-     <div class="avatara">
-     <div class="avatar-style-{AvatarShape}">
-     <img src="{PortraitURL-128}"/></div></div></a>    
-  
-     {/block:ShowAvatar}<div class="title"><a href="/">{Title}</a></div>{block:ShowDescription} 
-  <div class="description">
-        {block:Description}
-           {Description} 
-        {/block:Description}
-         <br>
-   
+<main> 
+    <aside>
+        <div class="headerimage">
+            <a href="/"><img src="{HeaderImage}"></a>
         </div>
-        {/block:ShowDescription}
-    
+           {block:ShowAvatar} 
+
+           <a href="/" title="{title}">
+           <div class="avatara">
+           <div class="avatar-style-{AvatarShape}">
+           <img src="{PortraitURL-128}"/></div></div></a>    
+  
+           {/block:ShowAvatar}
+                <div class="title">
+                <a href="/">{Title}</a>
+                </div>
+           {block:ShowDescription} 
+              <div class="description">
+                 {block:Description}
+                     {Description} 
+                 {/block:Description}
+              </div>
+           {/block:ShowDescription}
